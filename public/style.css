@@ -1,9 +1,17 @@
+html, body, #main{
+    background: lightgray;
+}
+
 :root {
     --blue: #0087aa;
     --white: #ffffff;
     --text-color: #4a4a4a;
     --hover-color: #1997B7;
 } 
+
+#main {
+    margin-top: 10%;
+}
 
 
 
@@ -12,6 +20,7 @@
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: var(--text-color);
+    margin-bottom: 25px;
 }
 
 #first-name, #last-name, #email, #message{
@@ -32,7 +41,7 @@
      border: 2px solid --blue;
  }
 
-#submit {
+#btnsubmit {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     height: 36px;

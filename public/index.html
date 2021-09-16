@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-
+        <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -22,7 +22,7 @@
 
     <div class="container" id="main">
 
-    <form action="/contacts" id="contactForm">
+    <form method="POST" action="/contacts" id="contactForm">
         <h1 id="header">Contact Us Form</h1>
         
         <div class="form-group" id="first-name" name='firstName'>
@@ -41,7 +41,7 @@
       <label for="message">Message</label>
           <textarea class="form-control" id="message-input" rows="3" name="message"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+        <button type="submit" class="btn btn-primary" id="btnsubmit" name="submitContact">Submit</button>
       </form>
     </div>
 
