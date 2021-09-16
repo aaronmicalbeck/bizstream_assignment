@@ -1,6 +1,5 @@
 const express = require('express');
 const { restart } = require('nodemon');
-const contact = require('../models/contact');
 const router = express.Router();
 module.exports = router;
 const Contact = require('../models/contact');
@@ -31,7 +30,7 @@ router.get('/:id', getContact,  (req, res)=>{
 
 // CREATING ONE CONTACT
 
-router.post('/contacts', async (req, res)=>{
+router.post('/', async (req, res)=>{
     const contact = new Contact({
         firstName: req.body.firstName,
         lastName: req.body.lastName,
@@ -44,7 +43,7 @@ router.post('/contacts', async (req, res)=>{
         res.status(201).json(newContact);
     }
     catch (err) {
-        res.status(400).json({ message: err.message});
+        res.status(400).json({ message: err.message + " Something went wrong" });
 
     }
 
