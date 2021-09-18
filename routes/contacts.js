@@ -40,6 +40,7 @@ router.post('/', async (req, res)=>{
     try {
         const newContact = await contact.save();
         res.status(201).json(newContact);
+
     }
     catch (err) {
         res.status(400).json({ message: err.message + " Something went wrong" });

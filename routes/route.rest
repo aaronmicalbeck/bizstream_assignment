@@ -19,7 +19,7 @@ Content-Type: application/json
 
 ### deleteById
 
-DELETE http://localhost:3000/contacts/61438692d3598c8e40b94fc5
+DELETE http://localhost:3000/contacts/6143ce792b3a4fd0b06bd3b2
 
 ### updateById
 

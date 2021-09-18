@@ -6,4 +6,3 @@ console.log("Thank you for your consideration for the Full Stack Web Developer p
 
 
 
-
